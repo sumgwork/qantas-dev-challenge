@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the root directory, you can run:
 
+### `npm run client-install`
+
+Can be executed after running **npm install** on root directory. Alternatively, one can go into the 'client' directory and execute 'npm install' there.
+
 ### `npm run dev`
 
 Runs both the server as well as the client side app in development mode.<br>
@@ -12,57 +16,41 @@ Open http://localhost:3000 to view the app in browser. The server runs on port 3
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run build:client`
 
-Builds the app for production to the `build` folder.<br>
+Builds the app for production to the `client/build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+This project uses following tech stack:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###BACKEND
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**express with graphql**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The backend consists of GraphQL Queries exposed at https://localhost:3001/graphql.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+###FRONTEND
 
-## Learn More
+**React, React Router, Apollo Client for GraphQL**
+Client application uses create-react-app build, coupled with GraphQL interfaces using Apollo Client
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Helmet**
+For setting title and meta descriptions on pages for crawlers and SEO purposes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**react-a11y**
+For accessibility checks
 
-### Code Splitting
+**styled components**
+For CSS in JS, and global styling of the app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+###TESTING
+Some sample test cases have been included to ensure some code coverage is provided. This app employs Jest test runner with Enzyme.

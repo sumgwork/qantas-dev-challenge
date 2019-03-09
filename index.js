@@ -48,13 +48,15 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/public/index.html"));
 });
 
-const port = process.env.PORT || 3001;
-if (port === 3000) {
-  //Port 3000 reserved for client app
-  console.log("PORT 3000 is already in use. Listening to port 3001 instead.");
-  port = 3001;
-}
+const port = 3001;
+// port = process.env.PORT || 3001;
+// if (port === 3000) {
+//   //Port 3000 reserved for client app
+//   console.log("PORT 3000 is already in use. Listening to port 3001 instead.");
+//   port = 3001;
+// }
 
+// Reserving port 3001 for backend server for now, later in production it can be dynamically configured from environment variables
 app.listen(port);
 
 console.log("App is listening on port " + port);
