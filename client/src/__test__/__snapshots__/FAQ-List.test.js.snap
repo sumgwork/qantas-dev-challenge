@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FAQList /> renders properly and matches snapshot 1`] = `
+<div>
+  <styled.div
+    className="selected clickable"
+    key="0"
+    onClick={[Function]}
+  >
+    <h2>
+      title1
+    </h2>
+  </styled.div>
+  <styled.div
+    className=" clickable"
+    key="1"
+    onClick={[Function]}
+  >
+    <h2>
+      title2
+    </h2>
+  </styled.div>
+</div>
+`;
