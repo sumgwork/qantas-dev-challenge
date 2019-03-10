@@ -57,3 +57,22 @@ Have tried to include use of some react concepts like Hooks, Higher Order Compon
 ### TESTING
 
 Some sample test cases have been included to ensure some code coverage is provided. This app employs Jest test runner with Enzyme.
+
+## Quick Start Guide
+
+Use following commands to setup and view the app in action -
+
+```
+git clone https://github.com/sumgwork/qantas-dev-challenge
+
+cd qantas-dev-challenge
+
+npm install
+
+npm run client-install
+
+npm run dev
+
+```
+
+Thank you.

@@ -59,4 +59,4 @@ const port = 3001;
 // Reserving port 3001 for backend server for now, later in production it can be dynamically configured from environment variables
 app.listen(port);
 
-console.log("App is listening on port " + port);
+console.log("Server is listening on port " + port);
