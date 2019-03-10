@@ -32,13 +32,13 @@ Your app is ready to be deployed!
 
 This project uses following tech stack:
 
-###BACKEND
+### BACKEND
 
 **express with graphql**
 
 The backend consists of GraphQL Queries exposed at https://localhost:3001/graphql.
 
-###FRONTEND
+### FRONTEND
 
 **React, React Router, Apollo Client for GraphQL**
 Client application uses create-react-app build, coupled with GraphQL interfaces using Apollo Client
@@ -54,5 +54,6 @@ For CSS in JS, and global styling of the app
 
 Have tried to include use of some react concepts like Hooks, Higher Order Components, Render Props etc. Since this was a very small project, I had to compromise with code consistency to include as many variations of doing stuff as possible.
 
-###TESTING
+### TESTING
+
 Some sample test cases have been included to ensure some code coverage is provided. This app employs Jest test runner with Enzyme.
