@@ -52,5 +52,7 @@ For accessibility checks
 **styled components**
 For CSS in JS, and global styling of the app
 
+Have tried to include use of some react concepts like Hooks, Higher Order Components, Render Props etc. Since this was a very small project, I had to compromise with code consistency to include as many variations of doing stuff as possible.
+
 ###TESTING
 Some sample test cases have been included to ensure some code coverage is provided. This app employs Jest test runner with Enzyme.
