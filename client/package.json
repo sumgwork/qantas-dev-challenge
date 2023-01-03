@@ -14,7 +14,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "react-test-renderer": "^16.8.4",
     "styled-components": "^4.1.3"
   },
